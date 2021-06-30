@@ -1,10 +1,10 @@
-FROM php:7.3-fpm
+FROM php:8.0-fpm
 ARG TIMEZONE
 
 RUN apt-get update && apt-get install -y libmcrypt-dev libfreetype6-dev libjpeg62-turbo-dev libpng-dev \
     default-mysql-client libmagickwand-dev zip libzip-dev --no-install-recommends \
     && pecl install imagick \
-    && docker-php-ext-configure gd --with-freetype-dir=/usr/include/ --with-jpeg-dir=/usr/include/ \
+    && docker-php-ext-configure gd --with-freetype=/usr/include/ --with-jpeg=/usr/include/ \
     && docker-php-ext-install pdo_mysql mysqli gd zip \
     && docker-php-ext-enable imagick
 
