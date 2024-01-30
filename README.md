@@ -5,7 +5,8 @@ Xenforo2 Forum Software in Docker image.
 
 ## Current tags
 
-* php8.1-fpm-1.0 or latest ([Dockerfile](https://github.com/drive-n-code/xenforo2-docker/blob/php8.1-fpm-1.0/Dockerfile))
+* php8.3-fpm-1.0 or latest ([Dockerfile](https://github.com/drive-n-code/xenforo2-docker/blob/php8.3-fpm-1.0/Dockerfile))
+* php8.1-fpm-1.0 ([Dockerfile](https://github.com/drive-n-code/xenforo2-docker/blob/php8.1-fpm-1.0/Dockerfile))
 * php8.0-fpm-0.1  ([Dockerfile](https://github.com/drive-n-code/xenforo2-docker/blob/php8.0-fpm-0.1/Dockerfile))
 * php7.3-fpm-1.0 ([Dockerfile](https://github.com/drive-n-code/xenforo2-docker/blob/php7.3-fpm-0.1/Dockerfile))
 * php7.1-fpm-1.0 ([Dockerfile](https://github.com/drive-n-code/xenforo2-docker/blob/php7.1-fpm-0.1/Dockerfile))

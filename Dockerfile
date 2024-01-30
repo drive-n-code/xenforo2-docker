@@ -1,7 +1,7 @@
-FROM php:8.1-fpm
+FROM php:8.3-fpm
 ARG TIMEZONE
 
-RUN apt-get update && apt-get install -y libmcrypt-dev libfreetype6-dev libjpeg62-turbo-dev libpng-dev \
+RUN apt-get update && apt-get install -y libmcrypt-dev libfreetype6-dev libjpeg62-turbo-dev libpng-dev wget \
     default-mysql-client libmagickwand-dev zip libzip-dev --no-install-recommends \
     && pecl install imagick \
     && docker-php-ext-configure gd --with-freetype=/usr/include/ --with-jpeg=/usr/include/ \
